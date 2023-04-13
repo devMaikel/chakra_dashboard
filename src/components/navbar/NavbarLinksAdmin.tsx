@@ -116,6 +116,24 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 				</MenuList>
 			</Menu>
 
+			<Button
+				variant='no-hover'
+				bg='transparent'
+				p='0px'
+				minW='unset'
+				minH='unset'
+				h='18px'
+				w='max-content'
+				onClick={toggleColorMode}>
+				<Icon
+					me='10px'
+					h='18px'
+					w='18px'
+					color={navbarIcon}
+					as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
+				/>
+			</Button>
+
 			<Menu>
 				<MenuButton p='0px'>
 					<Icon mt='6px' as={MdInfoOutline} color={navbarIcon} w='18px' h='18px' me='10px' />
@@ -157,7 +175,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 				</MenuList>
 			</Menu>
 
-			<Button
+			{/* <Button
 				variant='no-hover'
 				bg='transparent'
 				p='0px'
@@ -173,7 +191,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					color={navbarIcon}
 					as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
 				/>
-			</Button>
+			</Button> */}
 			<Menu>
 				<MenuButton p='0px'>
 					<Avatar
