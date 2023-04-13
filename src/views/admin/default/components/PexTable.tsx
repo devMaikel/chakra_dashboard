@@ -5,7 +5,7 @@ import { Container, Flex, Table, Tbody, Td, Text, Th, Thead, Tr, useColorModeVal
 export default function PexTable (props: PexTableProps) {
   const { title, subTitle, columns, lines } = props
 
-  const textColor = useColorModeValue('secondaryGray.900', 'white')
+  const textColor = useColorModeValue('secondaryGray.900', 'white') 
   const borderColor = useColorModeValue('gray.200', 'whiteAlpha.100')
 
   return (
