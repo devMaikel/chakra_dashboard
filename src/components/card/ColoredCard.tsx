@@ -13,7 +13,7 @@ export default function Default(props: {
   medValue: string | number;
 }) {
 	const { startContent, endContent, name, growth, value, medValue, color } = props;
-	const textColor = useColorModeValue('#2B3674', '#2B3674');
+	const textColor = useColorModeValue('white', '#2B3674');
 	const textColorSecondary = 'secondaryGray.600';
 
 	return (
@@ -29,7 +29,7 @@ export default function Default(props: {
 				<Stat my='auto' >
           {startContent}
           <StatNumber
-						color={'black'}
+						color={textColor}
 						fontSize={{
 							base: '4xl'
 						}}>
