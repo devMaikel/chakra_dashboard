@@ -97,16 +97,6 @@ export default function UserReports () {
     <AdminLayout>
       <Box pt={{ base: '130px', md: '80px', xl: '80px' }}>
         <>
-        {/* <MiniCalendar selectRange={false} /> */}
-        <Flex paddingBottom='10'>
-          <InputGroup>
-            <Input
-              placeholder="Selecione uma data"
-              value=''
-            />
-            <InputRightElement pointerEvents="none" />
-          </InputGroup>
-        </Flex>
           <SimpleGrid
             columns={{ base: 1, md: 3, lg: 3, '2xl': 4 }}
             gap='20px'
